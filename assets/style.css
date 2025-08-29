@@ -1,0 +1,52 @@
+
+:root{
+  --bg:#0b0d10;
+  --card:#11151a;
+  --muted:#7f8ea3;
+  --text:#e8eef7;
+  --brand:#7ac8ff;
+  --accent:#ffd36f;
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,"Helvetica Neue","Apple Color Emoji","Segoe UI Emoji";line-height:1.6}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.header{position:sticky;top:0;background:rgba(11,13,16,.85);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid #1c2230;z-index:10}
+.header-inner{display:flex;align-items:center;gap:16px;padding:14px 24px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--accent));display:grid;place-items:center;color:#0b0d10;font-weight:800}
+.brand h1{font-size:18px;margin:0}
+.nav{margin-left:auto;display:flex;gap:16px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid #223045;background:#121823;padding:10px 14px;border-radius:12px;color:var(--text)}
+.btn:hover{background:#182132}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid #1b2230;border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;height:160px;object-fit:cover;background:#0b0d10}
+.card .pad{padding:14px}
+.card h3{margin:6px 0 6px;font-size:18px;line-height:1.35}
+.card p{color:var(--muted);margin:0 0 8px}
+.badge{display:inline-block;font-size:12px;color:#09121d;background:var(--brand);padding:3px 8px;border-radius:999px;font-weight:700;margin-right:6px}
+.footer{border-top:1px solid #1c2230;color:var(--muted);padding:28px 0;margin-top:36px}
+.hero{display:grid;gap:14px;margin:16px 0 24px}
+.hero img{width:100%;height:360px;object-fit:cover;border-radius:var(--radius);border:1px solid #1b2230}
+.meta{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14px}
+.meta .dot{width:4px;height:4px;background:#3a4a64;border-radius:50%}
+.prose{max-width:800px;margin:0 auto}
+.prose h1{font-size:34px;line-height:1.2;margin:8px 0 6px}
+.prose h2{font-size:22px;margin:24px 0 10px}
+.prose p{color:#cdd7e7}
+.prose li{margin:10px 0}
+.callout{border:1px dashed #2b3950;border-radius:14px;background:#0d131d;padding:12px 14px;color:#cbd7e7}
+.kicker{color:var(--accent);text-transform:uppercase;font-weight:800;letter-spacing:.08em;font-size:12px}
+.share{display:flex;gap:8px;margin:16px 0 0}
+.share a{border:1px solid #23324a;background:#111826;border-radius:10px;padding:8px 10px}
+.ad-slot{display:grid;place-items:center;border:2px dashed #2d394f;border-radius:16px;color:#86a0c8;padding:26px 0;margin:16px 0}
+.small{font-size:13px;color:#91a3bd}
+.post-list li{margin:10px 0 14px}
+figure{margin:20px 0}
+figcaption{font-size:12px;color:#93a7c6}
+code.inline{background:#0e1622;border:1px solid #1b2840;padding:2px 6px;border-radius:8px}
+/* progress bar */
+.progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--brand),var(--accent));width:0%;z-index:20}
